@@ -133,8 +133,9 @@
             }
         ]';
 
-        $products = json_decode($data, true);
-        // dd($products);
+        // $products = json_decode($data, true);
+        $products = json_decode($data);
+        dd($products);
 
         $lunghe = [];
         $corte = [];
