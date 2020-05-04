@@ -135,7 +135,7 @@
 
         // $products = json_decode($data, true);
         $products = json_decode($data);
-        dd($products);
+        // dd($products);
 
         $lunghe = [];
         $corte = [];
