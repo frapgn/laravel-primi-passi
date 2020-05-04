@@ -1,0 +1,16 @@
+body {
+  background-color: #222;
+}
+
+body header {
+  background: white;
+}
+
+body main {
+  background: lightgrey;
+}
+
+body footer {
+  background: white;
+}
+
