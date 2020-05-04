@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #f2f2f2;
@@ -11,22 +17,39 @@ body {
 
 header {
   background: white;
+  text-align: center;
 }
 
 main {
   background: #222;
+  padding: 50px 0;
 }
 
-main h2 {
+main .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .container h2 {
   font-size: 25px;
 }
 
-main div .title {
+main .container .product {
+  width: calc(100%/ 3);
+  float: left;
+  padding: 5px;
+}
+
+main .container .product img {
+  width: 100%;
+}
+
+main .container .product div .title {
   text-transform: uppercase;
   font-size: 20px;
 }
 
-main svg {
+main .container .product svg {
   fill: #f2f2f2;
 }
 
