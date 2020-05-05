@@ -52,26 +52,69 @@ main .container h2 {
 
 main .container section {
   margin: 40px 0;
-}
-
-main .container section .product {
-  width: calc(100%/ 3);
-  float: left;
-  padding: 5px;
-}
-
-main .container section .product img {
   width: 100%;
 }
 
-main .container section .product .title {
-  text-transform: uppercase;
-  font-size: 20px;
-  text-decoration: none;
-  color: #f2f2f2;
+main .container section .product-wrapper {
+  width: calc(100% / 3);
+  padding: 5px;
+  float: left;
 }
 
-main .container section .product svg {
+main .container section .product-wrapper .product {
+  position: relative;
+  overflow: hidden;
+}
+
+main .container section .product-wrapper .product:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main .container section .product-wrapper .product:hover .inside {
+  opacity: 1;
+}
+
+main .container section .product-wrapper .product:hover img {
+  transform: scale(1.1);
+}
+
+main .container section .product-wrapper .product img {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s linear;
+}
+
+main .container section .product-wrapper .product .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s linear;
+}
+
+main .container section .product-wrapper .product .inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+main .container section .product-wrapper .product .inside .title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+main .container section .product-wrapper .product .inside svg {
   fill: #f2f2f2;
 }
 
