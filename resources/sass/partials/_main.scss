@@ -12,9 +12,15 @@ main {
             margin: 40px 0;
             width: 100%;
             .product-wrapper {
-                width: calc(100% / 3);
+                width: 100%;
                 padding: 5px;
                 float: left;
+                @media screen and (min-width: 1024px) {
+                    width: calc(100% / 3);
+                }
+                @media screen and (min-width: 768px) {
+                    width: calc(100% / 2);
+                }
                 .product {
                     position: relative;
                     overflow: hidden;
@@ -68,3 +74,17 @@ main {
         }
     }
 }
+
+/* TABLET */
+// @media screen and (min-width: 768px) {
+//     .product-wrapper {
+//         width: calc(100% / 2);
+//     }
+// }
+
+/* DESKTOP */
+// @media screen and (min-width: 1024px) {
+//     .product-wrapper {
+//         width: calc(100% / 3);
+//     }
+// }

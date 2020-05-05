@@ -56,9 +56,21 @@ main .container section {
 }
 
 main .container section .product-wrapper {
-  width: calc(100% / 3);
+  width: 100%;
   padding: 5px;
   float: left;
+}
+
+@media screen and (min-width: 1024px) {
+  main .container section .product-wrapper {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .container section .product-wrapper {
+    width: calc(100% / 2);
+  }
 }
 
 main .container section .product-wrapper .product {
@@ -117,6 +129,10 @@ main .container section .product-wrapper .product .inside .title {
 main .container section .product-wrapper .product .inside svg {
   fill: #f2f2f2;
 }
+
+/* TABLET */
+
+/* DESKTOP */
 
 footer {
   background: white;
