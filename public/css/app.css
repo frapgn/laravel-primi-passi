@@ -20,6 +20,22 @@ header {
   text-align: center;
 }
 
+header ul {
+  list-style: none;
+  height: 30px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
 main {
   background: #222;
   padding: 50px 0;
@@ -34,22 +50,28 @@ main .container h2 {
   font-size: 25px;
 }
 
-main .container .product {
+main .container section {
+  margin: 40px 0;
+}
+
+main .container section .product {
   width: calc(100%/ 3);
   float: left;
   padding: 5px;
 }
 
-main .container .product img {
+main .container section .product img {
   width: 100%;
 }
 
-main .container .product div .title {
+main .container section .product .title {
   text-transform: uppercase;
   font-size: 20px;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
-main .container .product svg {
+main .container section .product svg {
   fill: #f2f2f2;
 }
 

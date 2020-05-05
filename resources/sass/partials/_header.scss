@@ -1,4 +1,18 @@
 header {
     background: white;
     text-align: center;
+
+    ul {
+        list-style: none;
+        height: 30px;
+        li {
+            display: inline-block;
+            a {
+                padding: 10px 10px;
+                text-decoration: none;
+                color: $alt_color;
+                font-weight: bold;
+            }
+        }
+    }
 }
