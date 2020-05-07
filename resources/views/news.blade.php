@@ -3,6 +3,6 @@
     News
 @endsection
 
-@section('css')
+@section('common_css')
     {{asset('css/la-molisana.css')}}
 @endsection
