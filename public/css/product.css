@@ -39,6 +39,18 @@ main .products-navigation span {
   color: #f2f2f2;
 }
 
+main .products-navigation span:last-child {
+  color: red;
+}
+
+main .products-navigation span.visible {
+  display: inline;
+}
+
+main .products-navigation span.hidden {
+  display: none;
+}
+
 main .prev-prod {
   left: 0;
 }

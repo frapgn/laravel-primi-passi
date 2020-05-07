@@ -28,7 +28,17 @@ main {
         text-align: center;
         text-decoration: none;
         span {
+            &:last-child {
+                color: red;
+            }
             color: $main_color;
+            &.visible {
+                display: inline;
+            }
+            &.hidden {
+                display: none;
+            }
+
         }
     }
 
@@ -40,7 +50,5 @@ main {
         right: 0;
     }
 
-    .stop-navigation {
 
-    }
 }
