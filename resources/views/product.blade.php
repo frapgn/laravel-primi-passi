@@ -23,4 +23,13 @@
         <img src="{{$product['src-p']}}" alt="{{$product['titolo']}}">
         <p>{!!$product['descrizione']!!}</p>
     </div>
+    <a {{($id >= 2 && $id <= count($products) - 2 ? 'href="' . route('product.show', ($id - 1)) . '"' . ' class="products-navigation prev-prod"' : 'href="#"' . ' class="products-navigation prev-prod stop-navigation"')}}>
+        <span> < </span>
+    </a>
+    @php
+        // dd(count($products));
+    @endphp
+    <a href="c" class="products-navigation next-prod">
+        <span> > </span>
+    </a>
 @endsection

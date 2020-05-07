@@ -22,3 +22,28 @@ main p {
   line-height: 30px;
 }
 
+main .products-navigation {
+  display: block;
+  height: 60px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+main .products-navigation span {
+  color: #f2f2f2;
+}
+
+main .prev-prod {
+  left: 0;
+}
+
+main .next-prod {
+  right: 0;
+}
+
