@@ -1,6 +1,7 @@
 
 main {
     background: #222;
+    // background-image: url('../img/');
     padding: 50px 0;
     .container {
         width: 90%;
@@ -15,11 +16,11 @@ main {
                 width: 100%;
                 padding: 5px;
                 float: left;
-                @media screen and (min-width: 1024px) {
-                    width: calc(100% / 3);
-                }
                 @media screen and (min-width: 768px) {
                     width: calc(100% / 2);
+                }
+                @media screen and (min-width: 1024px) {
+                    width: calc(100% / 3);
                 }
                 .product {
                     position: relative;
@@ -74,17 +75,3 @@ main {
         }
     }
 }
-
-/* TABLET */
-// @media screen and (min-width: 768px) {
-//     .product-wrapper {
-//         width: calc(100% / 2);
-//     }
-// }
-
-/* DESKTOP */
-// @media screen and (min-width: 1024px) {
-//     .product-wrapper {
-//         width: calc(100% / 3);
-//     }
-// }

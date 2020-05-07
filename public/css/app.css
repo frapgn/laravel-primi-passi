@@ -61,15 +61,15 @@ main .container section .product-wrapper {
   float: left;
 }
 
-@media screen and (min-width: 1024px) {
-  main .container section .product-wrapper {
-    width: calc(100% / 3);
-  }
-}
-
 @media screen and (min-width: 768px) {
   main .container section .product-wrapper {
     width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .container section .product-wrapper {
+    width: calc(100% / 3);
   }
 }
 
@@ -130,11 +130,11 @@ main .container section .product-wrapper .product .inside svg {
   fill: #f2f2f2;
 }
 
-/* TABLET */
-
-/* DESKTOP */
-
 footer {
   background: white;
+}
+
+footer .h2 {
+  font-size: 25px;
 }
 

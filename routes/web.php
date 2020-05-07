@@ -22,8 +22,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/prodotti', function () {
-    return view('prodotti');
-})->name('prodotti');
+    return view('products');
+})->name('products');
 
 Route::get('/news', function () {
     return view('news');
