@@ -5,7 +5,7 @@
 
 @extends('layouts.lyt_html_base')
 @section('title')
-    Home
+    {{$product['titolo']}}
 @endsection
 
 @section('common_css')
