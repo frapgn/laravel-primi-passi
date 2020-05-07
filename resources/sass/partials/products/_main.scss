@@ -1,0 +1,70 @@
+
+main {
+    background: #222;
+    // background-image: url('../img/');
+    padding: 50px 0;
+    section {
+        margin: 40px 0;
+        width: 100%;
+        .product-wrapper {
+            width: 100%;
+            padding: 5px;
+            float: left;
+            @media screen and (min-width: 768px) {
+                width: calc(100% / 2);
+            }
+            @media screen and (min-width: 1024px) {
+                width: calc(100% / 3);
+            }
+            .product {
+                position: relative;
+                overflow: hidden;
+                &:hover .overlay {
+                    background-color: rgba(0,0,0,0.5);
+
+                }
+                &:hover .inside {
+                    opacity: 1;
+                }
+                &:hover img{
+                    transform: scale(1.1);
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    transition: transform .2s linear;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0,0,0,0);
+                    transition: background-color .3s linear;
+                }
+                .inside {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 70%;
+                    opacity: 0;
+                    transition: opacity .25s linear;
+                    .title {
+                        display: block;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        text-decoration: none;
+                        color: $main_color;
+                        margin-bottom: 20px;
+                    }
+                    svg {
+                        fill: $main_color;
+                    }
+                }
+            }
+        }
+    }
+}

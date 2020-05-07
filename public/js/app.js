@@ -19317,10 +19317,32 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/la-molisana.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/la-molisana.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/product.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/product.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/products.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/products.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19329,14 +19351,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!**********************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/la-molisana.scss ./resources/sass/product.scss ./resources/sass/products.scss ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/frank/www/boolean/github/laravel-primi-passi/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/frank/www/boolean/github/laravel-primi-passi/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/frank/www/boolean/github/laravel-primi-passi/resources/sass/la-molisana.scss */"./resources/sass/la-molisana.scss");
+__webpack_require__(/*! /home/frank/www/boolean/github/laravel-primi-passi/resources/sass/product.scss */"./resources/sass/product.scss");
+module.exports = __webpack_require__(/*! /home/frank/www/boolean/github/laravel-primi-passi/resources/sass/products.scss */"./resources/sass/products.scss");
 
 
 /***/ })

@@ -1,0 +1,13 @@
+main {
+  background-color: #b8dae4;
+}
+
+main h1,
+main img {
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
