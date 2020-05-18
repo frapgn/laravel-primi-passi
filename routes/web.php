@@ -21,14 +21,14 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/prodotti', function () {
-    return view('products');
-})->name('products');
+// Route::get('/prodotti', function () {
+//     return view('products');
+// })->name('products');
+
+Route::get('/prodotti', 'ProductController@products')->name('products');
 
 Route::get('/news', function () {
     return view('news');
 })->name('news');
 
-Route::get('/prodotto/{id}', function($id) {
-    return view('product', compact('id'));
-})->name('product.show');
+Route::get('/prodotto/{id}', 'ProductController@show')->name('product.show');
