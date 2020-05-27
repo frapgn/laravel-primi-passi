@@ -10,7 +10,7 @@ class Product extends Model
     *   si chiama 'products' perchè guarda il nome della classe Product
     *   e fa il plurale.
     *   È come se avessimo già fatto per noi questo: */
-    public $table = 'products';
+    // protected $table = 'products';
 
     // Se vogliamo settare manualmente il nome della tabella possiamo fare così:
     // protected $table = 'NOME_TABELLA';
